@@ -1,0 +1,36 @@
+{
+	"info": {
+		"_postman_id": "45f569d1-3aa1-44e7-b808-7b7b62a514b8",
+		"name": "DRC",
+		"description": "Document Registratie Component API Tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "EnkelvoudigInformatieObjectSaveAcync",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"url\": \"http://www.google.com/s166\",\r\n  \"identificatie\": \"11111\",\r\n  \"bronorganisatie\": \"string\",\r\n  \"creatiedatum\": \"2018-08-29T15:11:18.420Z\",\r\n  \"titel\": \"string\",\r\n  \"vertrouwelijkaanduiding\": \"openbaar\",\r\n  \"auteur\": \"string\",\r\n  \"formaat\": \"string\",\r\n  \"taal\": \"aar\",\r\n  \"inhoud\": \"string\",\r\n  \"link\": \"http://www.google.com/s166\",\r\n  \"beschrijving\": \"string\",\r\n  \"informatieobjecttype\": \"string\"\r\n}"
+				},
+				"url": {
+					"raw": "{{Host}}/enkelvoudiginformatieobjecten",
+					"host": [
+						"{{Host}}"
+					],
+					"path": [
+						"enkelvoudiginformatieobjecten"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
